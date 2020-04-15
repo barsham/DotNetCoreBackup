@@ -18,6 +18,9 @@ namespace DotNetCoreBackup
 
         private static void Main(string[] args)
         {
+            
+            Console.Clear();
+
             Logger.Info("Backup started.");
 
             var startTime = DateTime.Now;
