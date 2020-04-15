@@ -48,7 +48,7 @@ namespace DotNetCoreBackup
 
                 Thread.Sleep(2000);
 
-                ConsoleFullWriteLine("Cleaning the Temp folder {backupInfo.TempFolder} ...");
+                ConsoleFullWriteLine($"Cleaning the Temp folder {backupInfo.TempFolder} ...");
                 Logger.Info($"Cleaning the Temp folder {backupInfo.TempFolder} ...");
                 Directory.Delete(backupInfo.TempFolder, true);
             }
