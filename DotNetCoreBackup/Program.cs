@@ -167,7 +167,7 @@ namespace DotNetCoreBackup
                 }
                 catch (IOException ioException)
                 {
-                    if (ioException.Message.EndsWith("used by another process."))
+                    if (ioException.Message.EndsWith("used by another process.") || ioException.Message.EndsWith("Stream was too long."))
                         Logger.Error(ioException);
                     else
                         throw;
